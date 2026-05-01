@@ -1,0 +1,122 @@
+[
+  {
+    "id": "bavoirs",
+    "title": {
+      "fr": "Bavoirs",
+      "en": "Bibs"
+    },
+    "price": 12,
+    "image": "/images/bavoirs.png",
+    "status": "available"
+  },
+  {
+    "id": "mobile-mer",
+    "title": {
+      "fr": "Mobile mer",
+      "en": "Ocean mobile"
+    },
+    "price": 26,
+    "image": "/images/mobile.png",
+    "status": "available"
+  },
+  {
+    "id": "parc-voyage",
+    "title": {
+      "fr": "Parc pliable voyage",
+      "en": "Foldable travel playpen"
+    },
+    "price": 30,
+    "image": "/images/parc.png",
+    "status": "available"
+  },
+  {
+    "id": "veilleuse",
+    "title": {
+      "fr": "Veilleuse",
+      "en": "Night light"
+    },
+    "price": 30,
+    "image": "/images/veilleuse.png",
+    "status": "available"
+  },
+  {
+    "id": "biberons",
+    "title": {
+      "fr": "Biberons",
+      "en": "Baby bottles"
+    },
+    "price": 39,
+    "image": "/images/biberons.png",
+    "status": "available"
+  },
+  {
+    "id": "tapis-pliable",
+    "title": {
+      "fr": "Tapis pliable et déhoussable",
+      "en": "Foldable removable-cover play mat"
+    },
+    "price": 48,
+    "image": "/images/tapis.png",
+    "status": "available"
+  },
+  {
+    "id": "matelas-langer",
+    "title": {
+      "fr": "Matelas à langer",
+      "en": "Changing mat"
+    },
+    "price": 70,
+    "image": "/images/table-langer.png",
+    "status": "available"
+  },
+  {
+    "id": "siege-auto",
+    "title": {
+      "fr": "Siège auto",
+      "en": "Car seat"
+    },
+    "price": 70,
+    "image": "/images/siege-auto.png",
+    "status": "available"
+  },
+  {
+    "id": "sac-langer",
+    "title": {
+      "fr": "Sac à langer",
+      "en": "Changing bag"
+    },
+    "price": 89,
+    "image": "/images/sac.png",
+    "status": "available"
+  },
+  {
+    "id": "baignoire",
+    "title": {
+      "fr": "Baignoire bébé sur pied",
+      "en": "Baby bathtub with stand"
+    },
+    "price": 99,
+    "image": "/images/baignoire.png",
+    "status": "available"
+  },
+  {
+    "id": "transat",
+    "title": {
+      "fr": "Transat",
+      "en": "Baby bouncer"
+    },
+    "price": 220,
+    "image": "/images/transat.png",
+    "status": "available"
+  },
+  {
+    "id": "poussette",
+    "title": {
+      "fr": "Poussette avec nacelle",
+      "en": "Stroller with carrycot"
+    },
+    "price": 349,
+    "image": "/images/poussette.webp",
+    "status": "available"
+  }
+]
