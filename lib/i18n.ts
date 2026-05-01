@@ -35,8 +35,8 @@ export const dictionaries = {
       step2Title: "Dernière étape",
       step2Intro: (amount: string, productTitle: string, isFree: boolean) =>
         isFree
-          ? `Votre participation de ${amount} € à la cagnotte est désormais enregistrée en votre nom. Il ne vous reste plus qu'à verser cette somme dans la cagnotte de Julie Murat !`
-          : `Votre participation de ${amount} € pour le cadeau "${productTitle}" est désormais enregistrée en votre nom. Il ne vous reste plus qu'à verser cette somme dans la cagnotte de Julie Murat !`,
+          ? `Votre participation de ${amount} € à la cagnotte est désormais enregistrée en votre nom. Il ne vous reste plus qu'à choisir le mode de paiement qui vous convient le mieux.`
+          : `Votre participation de ${amount} € pour le cadeau "${productTitle}" est désormais enregistrée en votre nom. Il ne vous reste plus qu'à choisir le mode de paiement qui vous convient le mieux.`,
       step2How: "Comment procéder",
       step2Methods: "En faisant un versement sur l'un des comptes suivants :",
       step2IBAN: "RIB / IBAN",
@@ -45,18 +45,19 @@ export const dictionaries = {
       step2PayPalValue: "julie.mrt@gmail.com",
       step2Wero: "Wero",
       step2WeroValue: "06 67 15 95 11 (Alexandre)",
-      step2Thanks: "Merci infiniment pour votre geste, il nous touche énormément. 💚",
+      step2Thanks:
+        "Merci infiniment pour votre geste, il nous touche énormément. 💚",
       backToList2: "Retour à la liste",
     },
     info: {
       subtitle: "Bienvenue sur notre liste de naissance !",
       description:
-        "Notre bébé est attendu pour début juillet 2026 et nous avons hâte de vous le faire rencontrer. Si vous souhaitez participer à notre liste, chaque cadeau — grand ou petit — nous touchera énormément.",
-      dueDate: "Date de terme",
+        "Notre petite framboise est attendue pour début juillet et elle a hâte de vous rencontrer. Si vous souhaitez participer à notre liste, chaque cadeau, grand ou petit, nous touchera énormément.",
+      dueDate: "Date d'arrivée prévue",
       dueDateValue: "3 juillet 2026",
-      address: "Adresse de livraison",
+      address: "Notre adresse",
       addressValue: "1 rue Capitaine Badille, 13600 La Ciotat",
-      freeContrib: "Vous préférez faire un cadeau libre ?",
+      freeContrib: "Vous préférez faire un don libre ?",
       freeContribBtn: "Participer à la cagnotte",
     },
     lang: {
@@ -91,8 +92,8 @@ export const dictionaries = {
       step2Title: "Last step",
       step2Intro: (amount: string, productTitle: string, isFree: boolean) =>
         isFree
-          ? `Your contribution of €${amount} to the kitty has been registered in your name. All that's left is to transfer this amount to Julie Murat's pot!`
-          : `Your contribution of €${amount} for "${productTitle}" has been registered in your name. All that's left is to transfer this amount to Julie Murat's pot!`,
+          ? `Your contribution of €${amount} to the kitty has been registered in your name. All that's left is to choose the payment method that works best for you.`
+          : `Your contribution of €${amount} for "${productTitle}" has been registered in your name. All that's left is to choose the payment method that works best for you.`,
       step2How: "How to proceed",
       step2Methods: "Make a transfer to one of the following accounts:",
       step2IBAN: "Bank transfer / IBAN",
@@ -107,12 +108,12 @@ export const dictionaries = {
     info: {
       subtitle: "Welcome to our baby registry!",
       description:
-        "Our baby is due in early July 2026 and we can't wait for you to meet them. If you'd like to take part in our registry, every gift — big or small — will mean the world to us.",
-      dueDate: "Due date",
+        "Our little raspberry is due in early July and can't wait to meet you. If you'd like to take part in our registry, every gift — big or small — will mean the world to us.",
+      dueDate: "Expected arrival date",
       dueDateValue: "3 July 2026",
-      address: "Delivery address",
+      address: "Our address",
       addressValue: "1 rue Capitaine Badille, 13600 La Ciotat, France",
-      freeContrib: "Prefer to give a free gift?",
+      freeContrib: "Prefer to make a free contribution?",
       freeContribBtn: "Contribute to the kitty",
     },
     lang: {
