@@ -8,7 +8,7 @@ export default function HomePage() {
     <main className="min-h-screen pb-12">
       <Header />
       <InfoBlock />
-      <section className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 pt-8">
+      <section className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 pt-2">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
