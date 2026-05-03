@@ -52,7 +52,7 @@ export const dictionaries = {
     info: {
       subtitle: "Bienvenue sur notre liste de naissance !",
       description:
-        "Notre petite framboise est attendue pour début juillet et elle a hâte de vous rencontrer. Si vous souhaitez participer à notre liste, chaque cadeau, grand ou petit, nous touchera énormément.",
+        "Notre petite framboise est attendue pour début juillet et elle a hâte de vous rencontrer. Si vous souhaitez participer à notre liste, chaque cadeau, grand ou petit, nous touchera énormément.\n\nIl n'y a volontairement pas de vêtements dans la liste ci-dessous car nous en avons déjà récupérés beaucoup de notre entourage. ",
       dueDate: "Date d'arrivée prévue",
       dueDateValue: "3 juillet 2026",
       address: "Notre adresse",
@@ -108,7 +108,7 @@ export const dictionaries = {
     info: {
       subtitle: "Welcome to our baby registry!",
       description:
-        "Our little raspberry is due in early July and can't wait to meet you. If you'd like to take part in our registry, every gift — big or small — will mean the world to us.",
+        "Our little raspberry is due in early July and can't wait to meet you. If you'd like to take part in our registry, every gift — big or small — will mean the world to us.\n\nWe've intentionally left clothing off the list below, as we've already received plenty from those around us.",
       dueDate: "Expected arrival date",
       dueDateValue: "3 July 2026",
       address: "Our address",

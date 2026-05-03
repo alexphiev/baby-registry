@@ -32,7 +32,7 @@ export function InfoBlock() {
             >
               {t.info.subtitle}
             </p>
-            <p className="text-[14px] text-(--color-text) leading-relaxed">
+            <p className="text-[14px] text-(--color-text) leading-relaxed whitespace-pre-line">
               {t.info.description}
             </p>
           </div>
