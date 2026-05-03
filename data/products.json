@@ -5,7 +5,7 @@
       "fr": "Bavoirs",
       "en": "Bibs"
     },
-    "price": 12,
+    "price": 15,
     "image": "/images/bavoirs.png",
     "status": "available"
   },
@@ -15,18 +15,8 @@
       "fr": "Mobile mer",
       "en": "Ocean mobile"
     },
-    "price": 26,
-    "image": "/images/mobile.png",
-    "status": "available"
-  },
-  {
-    "id": "parc-voyage",
-    "title": {
-      "fr": "Parc pliable voyage",
-      "en": "Foldable travel playpen"
-    },
     "price": 30,
-    "image": "/images/parc.jpg",
+    "image": "/images/mobile.png",
     "status": "available"
   },
   {
@@ -40,23 +30,33 @@
     "status": "available"
   },
   {
-    "id": "biberons",
+    "id": "Jeu de biberons",
     "title": {
-      "fr": "Biberons",
+      "fr": "Jeu de biberons",
       "en": "Baby bottles"
     },
-    "price": 39,
+    "price": 40,
     "image": "/images/biberons.png",
     "status": "available"
   },
   {
     "id": "tapis-pliable",
     "title": {
-      "fr": "Tapis pliable et déhoussable",
+      "fr": "Tapis de jeu pliable",
       "en": "Foldable removable-cover play mat"
     },
-    "price": 48,
+    "price": 50,
     "image": "/images/tapis.png",
+    "status": "available"
+  },
+  {
+    "id": "plan-a-langer",
+    "title": {
+      "fr": "Plan à langer",
+      "en": "Changing plan"
+    },
+    "price": 60,
+    "image": "/images/plan-a-langer.webp",
     "status": "available"
   },
   {
@@ -85,7 +85,7 @@
       "fr": "Sac à langer",
       "en": "Changing bag"
     },
-    "price": 89,
+    "price": 90,
     "image": "/images/sac.png",
     "status": "available"
   },
@@ -95,7 +95,7 @@
       "fr": "Baignoire bébé sur pied",
       "en": "Baby bathtub with stand"
     },
-    "price": 99,
+    "price": 100,
     "image": "/images/baignoire.png",
     "status": "available"
   },
@@ -115,7 +115,7 @@
       "fr": "Poussette avec nacelle",
       "en": "Stroller with carrycot"
     },
-    "price": 349,
+    "price": 350,
     "image": "/images/poussette.webp",
     "status": "available"
   }
