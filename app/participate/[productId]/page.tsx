@@ -284,6 +284,10 @@ export default function ParticipatePage({
             />
           </div>
 
+          <p className="text-[13px] text-(--color-text-muted) leading-relaxed">
+            {t.form.paymentNote}
+          </p>
+
           {step === "error" ? (
             <p className="text-[13px] text-destructive">{t.form.errorMessage}</p>
           ) : null}

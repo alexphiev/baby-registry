@@ -28,8 +28,10 @@ export const dictionaries = {
       amountHint: "Choisissez librement le montant qui vous convient",
       message: "Un message pour nous",
       messagePlaceholder: "Un petit mot qui nous fera chaud au cœur…",
-      submit: "Envoyer ma participation",
+      submit: "Envoyer le message et procéder au paiement",
       submitting: "Envoi en cours…",
+      paymentNote:
+        "Les informations de paiement seront transmises à l'étape suivante, par virement ou Wero, sans aucun frais.",
       errorMessage: "Une erreur est survenue. Veuillez réessayer.",
       backToList: "Retour à la liste",
       step2Title: "Dernière étape",
@@ -85,8 +87,10 @@ export const dictionaries = {
       amountHint: "Choose any amount that works for you",
       message: "A message for us",
       messagePlaceholder: "A few kind words we'll treasure…",
-      submit: "Send my contribution",
+      submit: "Send message and proceed to payment",
       submitting: "Sending…",
+      paymentNote:
+        "Payment details will be shared on the next step, by bank transfer or Wero, with no fees.",
       errorMessage: "Something went wrong. Please try again.",
       backToList: "Back to the list",
       step2Title: "Last step",

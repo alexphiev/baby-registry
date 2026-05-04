@@ -5,7 +5,7 @@ import { ParticipateButton } from "@/components/ParticipateButton";
 import { useLocale } from "@/lib/i18n";
 import type { Product } from "@/lib/products";
 
-export function ProductCard({ product }: { product: Product }) {
+export function ProductCard({ product, priority = false }: { product: Product; priority?: boolean }) {
   const { locale, t } = useLocale();
   const isGifted = product.status === "gifted";
   const title = product.title[locale];
@@ -22,6 +22,7 @@ export function ProductCard({ product }: { product: Product }) {
           fill
           className={`object-cover transition-transform duration-500 group-hover:scale-[1.03] ${isGifted ? "opacity-50 grayscale" : ""}`}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          priority={priority}
         />
         {isGifted ? (
           <div className="absolute inset-0 flex items-center justify-center">
