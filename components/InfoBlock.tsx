@@ -46,6 +46,20 @@ export function InfoBlock() {
               <p className="text-[16px] font-semibold text-(--color-text)">
                 {t.info.dueDateValue}
               </p>
+              <div className="flex gap-6 mt-3">
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-(--color-text-muted) mb-1">
+                    {t.info.babySex}
+                  </p>
+                  <p className="text-[16px] font-semibold text-(--color-text)">{t.info.babySexValue}</p>
+                </div>
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-(--color-text-muted) mb-1">
+                    {t.info.babyWeight}
+                  </p>
+                  <p className="text-[16px] font-semibold text-(--color-text)">{t.info.babyWeightValue}</p>
+                </div>
+              </div>
             </div>
             <div className="px-6 py-5">
               <p className="text-[10px] font-semibold uppercase tracking-widest text-(--color-text-muted) mb-1">

@@ -61,6 +61,10 @@ export const dictionaries = {
       addressValue: "1 rue Capitaine Badille, 13600 La Ciotat",
       freeContrib: "Vous préférez faire un don libre ?",
       freeContribBtn: "Participer à la cagnotte",
+      babySex: "Sexe",
+      babySexValue: "Fille",
+      babyWeight: "Poids au 28 avril",
+      babyWeightValue: "1,8 kg",
     },
     lang: {
       toggle: "EN",
@@ -119,6 +123,10 @@ export const dictionaries = {
       addressValue: "1 rue Capitaine Badille, 13600 La Ciotat, France",
       freeContrib: "Prefer to make a free contribution?",
       freeContribBtn: "Contribute to the kitty",
+      babySex: "Sex",
+      babySexValue: "Girl",
+      babyWeight: "Weight as of April 28",
+      babyWeightValue: "1.8 kg",
     },
     lang: {
       toggle: "FR",
