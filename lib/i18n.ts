@@ -1,6 +1,12 @@
 "use client";
 
-import { createContext, useCallback, useContext, useState } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useSyncExternalStore,
+} from "react";
+import { LOCALE_COOKIE } from "./locale-constants";
 
 const STORAGE_KEY = "locale";
 
@@ -63,8 +69,8 @@ export const dictionaries = {
       freeContribBtn: "Participer à la cagnotte",
       babySex: "Sexe",
       babySexValue: "Fille",
-      babyWeight: "Poids au 28 avril",
-      babyWeightValue: "1,8 kg",
+      babyWeight: "Poids au 2 juin",
+      babyWeightValue: "2,9 kg",
     },
     lang: {
       toggle: "EN",
@@ -125,8 +131,8 @@ export const dictionaries = {
       freeContribBtn: "Contribute to the kitty",
       babySex: "Sex",
       babySexValue: "Girl",
-      babyWeight: "Weight as of April 28",
-      babyWeightValue: "1.8 kg",
+      babyWeight: "Weight as of June 2",
+      babyWeightValue: "2.9 kg",
     },
     lang: {
       toggle: "FR",
@@ -137,16 +143,32 @@ export const dictionaries = {
 type Dictionaries = typeof dictionaries;
 export type Dict = Dictionaries[Locale];
 
-function detectLocale(): Locale {
-  if (typeof window === "undefined") return "fr";
-  // Prefer the value set synchronously by the inline script in layout.tsx
-  const preloaded = (window as unknown as Record<string, unknown>).__LOCALE__;
-  if (preloaded === "fr" || preloaded === "en") return preloaded;
+function setLocaleCookie(locale: Locale) {
+  document.cookie = `${LOCALE_COOKIE}=${locale};path=/;max-age=31536000;samesite=lax`;
+}
+
+function detectClientLocale(): Locale {
   const stored = localStorage.getItem(STORAGE_KEY) as Locale | null;
   if (stored === "fr" || stored === "en") return stored;
   const lang = navigator.language.toLowerCase();
   if (lang.startsWith("en")) return "en";
   return "fr";
+}
+
+const localeListeners = new Set<() => void>();
+let clientLocaleOverride: Locale | null = null;
+
+function subscribeToLocale(onStoreChange: () => void) {
+  localeListeners.add(onStoreChange);
+  return () => localeListeners.delete(onStoreChange);
+}
+
+function getClientLocaleSnapshot(): Locale {
+  return clientLocaleOverride ?? detectClientLocale();
+}
+
+function emitLocaleChange() {
+  for (const listener of localeListeners) listener();
 }
 
 export type LocaleContextValue = {
@@ -157,14 +179,18 @@ export type LocaleContextValue = {
 
 export const LocaleContext = createContext<LocaleContextValue | null>(null);
 
-export function useLocaleInit() {
-  // Lazy init reads window.__LOCALE__ (set by inline script) on first render,
-  // avoiding the FR→EN flash for English users.
-  const [locale, setLocaleState] = useState<Locale>(() => detectLocale());
+export function useLocaleInit(initialLocale: Locale) {
+  const locale = useSyncExternalStore(
+    subscribeToLocale,
+    getClientLocaleSnapshot,
+    () => initialLocale,
+  );
 
   const setLocale = useCallback((next: Locale) => {
+    clientLocaleOverride = next;
     localStorage.setItem(STORAGE_KEY, next);
-    setLocaleState(next);
+    setLocaleCookie(next);
+    emitLocaleChange();
   }, []);
 
   return { locale, t: dictionaries[locale], setLocale };

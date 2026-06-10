@@ -3,6 +3,7 @@ import { Albert_Sans, Fredoka } from "next/font/google";
 import "./globals.css";
 import { LocaleProvider } from "@/lib/LocaleProvider";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { getServerLocale } from "@/lib/locale-server";
 
 const albertSans = Albert_Sans({
   variable: "--font-albert",
@@ -22,32 +23,20 @@ export const metadata: Metadata = {
     "Liste de naissance d'Alexandre et Julie / Alexandre and Julie's baby registry",
 };
 
-// Runs synchronously before React hydration to avoid locale flash.
-const localeInitScript = `
-(function(){
-  try {
-    var stored = localStorage.getItem('locale');
-    if (stored === 'en' || stored === 'fr') { window.__LOCALE__ = stored; return; }
-    if (navigator.language.toLowerCase().startsWith('en')) { window.__LOCALE__ = 'en'; } else { window.__LOCALE__ = 'fr'; }
-  } catch(e) { window.__LOCALE__ = 'fr'; }
-})();
-`;
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getServerLocale();
+
   return (
     <html
-      lang="fr"
+      lang={locale}
       className={`${albertSans.variable} ${fredoka.variable} h-full antialiased`}
     >
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: localeInitScript }} />
-      </head>
       <body className="min-h-full flex flex-col">
-        <LocaleProvider>
+        <LocaleProvider initialLocale={locale}>
           <LanguageSwitcher />
           {children}
         </LocaleProvider>

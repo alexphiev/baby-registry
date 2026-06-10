@@ -57,7 +57,7 @@
     },
     "price": 60,
     "image": "/images/plan-a-langer.webp",
-    "status": "available"
+    "status": "gifted"
   },
   {
     "id": "matelas-langer",
@@ -67,7 +67,7 @@
     },
     "price": 70,
     "image": "/images/table-langer.png",
-    "status": "available"
+    "status": "gifted"
   },
   {
     "id": "siege-auto",
@@ -77,7 +77,7 @@
     },
     "price": 70,
     "image": "/images/siege-auto.png",
-    "status": "available"
+    "status": "gifted"
   },
   {
     "id": "sac-langer",
@@ -87,7 +87,7 @@
     },
     "price": 90,
     "image": "/images/sac.png",
-    "status": "available"
+    "status": "gifted"
   },
   {
     "id": "baignoire",
@@ -97,7 +97,7 @@
     },
     "price": 100,
     "image": "/images/baignoire.png",
-    "status": "available"
+    "status": "gifted"
   },
   {
     "id": "transat",
@@ -105,8 +105,18 @@
       "fr": "Transat",
       "en": "Baby bouncer"
     },
-    "price": 220,
-    "image": "/images/transat.png",
+    "price": 50,
+    "image": "/images/transat.webp",
+    "status": "available"
+  },
+  {
+    "id": "cartes",
+    "title": {
+      "fr": "Cartes contrastées",
+      "en": "Contrast cards"
+    },
+    "price": 20,
+    "image": "/images/cartes.png",
     "status": "available"
   },
   {
