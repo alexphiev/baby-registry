@@ -60,6 +60,26 @@
     "status": "gifted"
   },
   {
+    "id": "formes",
+    "title": {
+      "fr": "Formes d'éveil",
+      "en": "Shapes"
+    },
+    "price": 30,
+    "image": "/images/formes.jpg",
+    "status": "available"
+  },
+  {
+    "id": "bavoirs-silicone",
+    "title": {
+      "fr": "Bavoirs en silicone",
+      "en": "Silicone bibs"
+    },
+    "price": 15,
+    "image": "/images/bavoirs-silicone.avif",
+    "status": "available"
+  },
+  {
     "id": "matelas-langer",
     "title": {
       "fr": "Matelas à langer",
@@ -107,7 +127,7 @@
     },
     "price": 50,
     "image": "/images/transat.webp",
-    "status": "available"
+    "status": "gifted"
   },
   {
     "id": "cartes",

@@ -11,7 +11,9 @@ export type Product = {
   status: ProductStatus;
 };
 
-export const products: Product[] = productsData as Product[];
+export const products: Product[] = (productsData as Product[]).sort(
+  (a, b) => a.price - b.price
+);
 
 export function getProduct(id: string): Product | undefined {
   return products.find((p) => p.id === id);
