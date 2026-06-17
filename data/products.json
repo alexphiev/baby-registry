@@ -148,5 +148,85 @@
     "price": 350,
     "image": "/images/poussette.webp",
     "status": "gifted"
+  },
+  {
+    "id": "babycook",
+    "title": {
+      "fr": "Babycook",
+      "en": "Babycook"
+    },
+    "price": 100,
+    "image": "/images/babycook.JPG",
+    "status": "available"
+  },
+  {
+    "id": "ciseaux",
+    "title": {
+      "fr": "Ciseaux à ongles",
+      "en": "Nail clippers"
+    },
+    "price": 7,
+    "image": "/images/ciseaux.JPG",
+    "status": "available"
+  },
+  {
+    "id": "jouets_bain",
+    "title": {
+      "fr": "Jouets de bain",
+      "en": "Bath toys"
+    },
+    "price": 15,
+    "image": "/images/jouets_bain.JPG",
+    "status": "available"
+  },
+  {
+    "id": "lunettes",
+    "title": {
+      "fr": "Lunettes de soleil",
+      "en": "Sunglasses"
+    },
+    "price": 20,
+    "image": "/images/lunettes.JPG",
+    "status": "available"
+  },
+  {
+    "id": "tetines",
+    "title": {
+      "fr": "Tetines",
+      "en": "Nappies"
+    },
+    "price": 10,
+    "image": "/images/tetines.JPG",
+    "status": "available"
+  },
+  {
+    "id": "lit",
+    "title": {
+      "fr": "Tente lit de voyage",
+      "en": "Travel crib tent"
+    },
+    "price": 50,
+    "image": "/images/lit.JPG",
+    "status": "available"
+  },
+  {
+    "id": "panier",
+    "title": {
+      "fr": "Panier de rangement",
+      "en": "Storage basket"
+    },
+    "price": 15,
+    "image": "/images/panier.JPG",
+    "status": "available"
+  },
+  {
+    "id": "vaisselle",
+    "title": {
+      "fr": "Vaisselle en silicone",
+      "en": "Silicone dinnerware"
+    },
+    "price": 30,
+    "image": "/images/vaisselle.JPG",
+    "status": "available"
   }
 ]
