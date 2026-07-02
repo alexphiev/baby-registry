@@ -1,5 +1,16 @@
 [
   {
+    "id": "don-association-maternite",
+    "title": {
+      "fr": "Don à l'association de la maternité de La Ciotat",
+      "en": "Donation to the La Ciotat Maternity Association"
+    },
+    "price": 0,
+    "image": "/images/association-maternite.webp",
+    "status": "available",
+    "link": "https://www.helloasso.com/associations/association-maternite-la-ciotat/formulaires/1"
+  },
+  {
     "id": "bavoirs",
     "title": {
       "fr": "Bavoirs",
@@ -27,7 +38,7 @@
     },
     "price": 30,
     "image": "/images/veilleuse.png",
-    "status": "available"
+    "status": "gifted"
   },
   {
     "id": "Jeu de biberons",
@@ -47,7 +58,7 @@
     },
     "price": 50,
     "image": "/images/tapis.png",
-    "status": "available"
+    "status": "gifted"
   },
   {
     "id": "plan-a-langer",

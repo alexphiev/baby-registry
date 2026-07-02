@@ -40,11 +40,12 @@ export function InfoBlock() {
           {/* Right: date + address */}
           <div className="flex flex-col divide-y divide-(--color-border) md:w-64 shrink-0">
             <div className="px-6 py-5">
+              <p className="text-[28px] font-bold text-(--color-text) mb-3">Livia</p>
               <p className="text-[10px] font-semibold uppercase tracking-widest text-(--color-text-muted) mb-1">
-                {t.info.dueDate}
+                {t.info.bornDate}
               </p>
               <p className="text-[16px] font-semibold text-(--color-text)">
-                {t.info.dueDateValue}
+                {t.info.bornDateValue}
               </p>
               <div className="flex gap-6 mt-3">
                 <div>

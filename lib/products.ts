@@ -9,6 +9,7 @@ export type Product = {
   price: number;
   image: string;
   status: ProductStatus;
+  link?: string;
 };
 
 export const products: Product[] = (productsData as Product[]).sort(

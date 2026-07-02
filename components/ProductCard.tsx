@@ -41,6 +41,17 @@ export function ProductCard({ product, priority = false }: { product: Product; p
           <h2 className="text-[16px] font-semibold text-(--color-text) leading-snug">
             {title}
           </h2>
+          {product.link ? (
+            <a
+              href={product.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1 text-[12px] underline underline-offset-2 hover:opacity-70 transition-opacity"
+              style={{ color: "#4a6b47" }}
+            >
+              {t.product.seeDetails}
+            </a>
+          ) : null}
           <p
             className="mt-1 text-[16px] font-semibold tracking-tight"
             style={{ color: "#4a6b47" }}
