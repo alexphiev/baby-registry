@@ -71,7 +71,7 @@ export const dictionaries = {
       babySex: "Sexe",
       babySexValue: "Fille",
       babyWeight: "Poids de naissance",
-      babyWeightValue: "3,615 kg · 60 cm",
+      babyWeightValue: "3,615 kg · 50 cm",
     },
     lang: {
       toggle: "EN",
@@ -134,7 +134,7 @@ export const dictionaries = {
       babySex: "Sex",
       babySexValue: "Girl",
       babyWeight: "Birth weight",
-      babyWeightValue: "3.615 kg · 60 cm",
+      babyWeightValue: "3.615 kg · 50 cm",
     },
     lang: {
       toggle: "FR",
