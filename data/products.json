@@ -201,16 +201,6 @@
     "status": "available"
   },
   {
-    "id": "tetines",
-    "title": {
-      "fr": "Tetines",
-      "en": "Nappies"
-    },
-    "price": 10,
-    "image": "/images/tetines.JPG",
-    "status": "available"
-  },
-  {
     "id": "lit",
     "title": {
       "fr": "Tente lit de voyage",
